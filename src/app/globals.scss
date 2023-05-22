@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;600;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.txt-gradient {
+  @apply bg-gradient-to-tr from-[#00ccaa] to-[#00aacc] text-transparent bg-clip-text;
+}
+
+.btn-hover {
+  @apply hover:text-mid-bl-gr transition-all duration-300;
+}
+
+.button {
+  @apply text-mid-bl-gr bg-neutral-200 my-2 px-8 py-1 rounded hover:bg-neutral-800 transition-all duration-300 cursor-pointer;
+}
